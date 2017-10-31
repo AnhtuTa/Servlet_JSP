@@ -1,0 +1,17 @@
+Các attribute của session (CHÚ Ý: CỦA SESSION CHỨ KO TÍNH CỦA REQUEST)
+
+Tên file:
+lệnh thực hiện
+
+
+HomeServlet:
+session.setAttribute("currentTerm", currentTerm);
+session.setAttribute("today", today);
+session.setAttribute("currentWeek", currentWeek);
+
+LoginServlet
+session.setAttribute("loginedUser", st);
+
+SelectRoleServlet
+session.setAttribute("roleOfUser", role);
+

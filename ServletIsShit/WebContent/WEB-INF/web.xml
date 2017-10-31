@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletIsShit</display-name>
+  
+    <servlet>
+		<servlet-name>helloWorld</servlet-name>
+		<servlet-class>o7planning.HelloWorld</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>helloWorld</servlet-name>
+		<url-pattern>/att</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>configDemo</servlet-name>
+		<servlet-class>trungtamjava.Bai8_2ConfigInWebxml</servlet-class>
+		<init-param>
+			<param-name>myname</param-name>
+			<param-value>Ta anh tu 1995</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>configDemo</servlet-name>
+		<url-pattern>/config2</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Ví dụ cách hiển thị lỗi: nếu người dùng nhập vào link ko tồn tại chẳng hạn, thì /handle-error đc gọi -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/handle-error</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/handle-error</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/handle-error</location>
+	</error-page>
+	
+	<!-- Ví dụ cách hiển thị lỗi: nếu code java có ngoại lện IOException chẳng hạn, thì /handle-exception đc gọi -->
+	<error-page>
+		<exception-type>java.io.IOException</exception-type>
+		<location>/handle-exception</location>
+	</error-page>
+	
+	<!-- ServletContext, dùng để khởi tạo giá trị cho mọi servlet trong project -->
+	<context-param>
+		<param-name>myname</param-name>
+		<param-value>Ta anh tu</param-value>
+	</context-param>
+	
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

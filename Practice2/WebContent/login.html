@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		.table_info {
+			padding: 5px;
+			border: 2px;
+			cellpadding: 5px;
+			background-color: #f0f0f0;
+			margin-bottom: 12px;
+		}
+		th {
+			text-align: center;
+			font: 20px Comic Sans MS;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+		td {
+			padding: 5px;
+		}
+		.first_left_row {
+			padding-right: 10px;
+			text-align: right;
+			text-shadow: 1px 1px 2px #888888;
+		}
+		.input_text {
+			padding: 5px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 5px #888888;
+			width: 200px;
+		}
+		.btn {
+			margin-left: 140px;
+			border: 2px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<form action="controller" method="post">
+		<table class="table_info">
+			<tr>
+				<th colspan="2">Login</th>
+			</tr>
+			
+			<tr>
+				<td class="first_left_row">Username</td>
+				<td>
+					<input type="text" name="tennguoidung" placeholder="username..." class="input_text"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="first_left_row">Password</td>
+				<td>
+					<input type="password" name="matkhau" placeholder="password..." class="input_text"/>
+				</td>
+			</tr>
+		</table>
+		<input class="btn" type="submit" value="Login">
+	</form>
+</body>
+</html>

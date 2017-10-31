@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/jsps/example1.jsp=UTF-8
+encoding//WebContent/WEB-INF/jsps/notes.txt=UTF-8
+encoding//WebContent/c_choose.jsp=UTF-8
+encoding//WebContent/c_remove.jsp=UTF-8
+encoding//WebContent/c_set.jsp=UTF-8
+encoding//WebContent/fmt_parseDate.jsp=UTF-8
+encoding//WebContent/fmt_parseNumber.jsp=UTF-8
+encoding//src/beans/Emp.java=UTF-8
+encoding//src/servlets/Servlet1.java=UTF-8
+encoding//src/servlets/Servlet2.java=UTF-8
+encoding//src/servlets/Servlet3.java=UTF-8
+encoding//src/servlets/Servlet4.java=UTF-8
+encoding//src/utils/DBUtils.java=UTF-8

@@ -1,0 +1,181 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background: #f0f0f0;
+	font: 18px Cambria, Arial;
+	margin: 0;
+}
+
+/*========Student Menubar style============*/
+.logo {
+	float: left;
+	margin-right: 20px;
+}
+.pNextLogo {
+	float: left;
+	color: white;
+	line-height: 79px;	/*Do cái logo có kích thước = 79px nên thằng này cũng nên như vậy để 2 bọn nó ở giữa nhau */
+	font-size: 50px;
+	font-family: Consolas;
+	font-weight: bold;
+	margin-left: 10px;
+	color: red;
+	text-shadow: -2px 0 yellow, 0 2px yellow, 2px 0 yellow, 0 -2px yellow;
+}
+.head {
+	background: #405580;
+	width: 100%;
+	min-width: 1200px;
+	height: 79px;
+	opacity: 0.8;
+}
+
+.head ul {
+	list-style: none;
+	text-align: center;
+	background: #405580;
+}
+.head ul li {
+	display: inline-table;
+	width: 122px;
+	height: 40px;
+	line-height: 40px;	/* Các chữ trong tag li: Căn lề ra giữa so với li */
+	position: relative;
+}
+.head ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	transition: all 0.5s;
+}
+.head ul li a:hover {
+	background: #fff;
+	color: #405580;
+}
+.head ul li > .sub-menu {	/*Chọn sub-menu đầu tiên của thẻ li này */
+	display: none;
+	position: absolute;
+}
+.head ul li:hover .sub-menu {	/*Chọn sub-menu khi thẻ li đc rê chuột vào */
+	display: block;
+}
+.head ul li .sub-menu a {
+	width: 200px;
+}
+.head ul li .sub-menu .sub-item-teacher a {
+	width: 230px;
+}
+.head ul li .sub-menu .sub-item-lookup a {
+	width: 160px;
+}
+/*========end Menubar style============*/
+
+/*========footer style============*/
+footer {
+	background: #333333;
+	width: 100%;
+	overflow: hidden;	/* Thuộc tính overflow xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung. */
+	opacity: 0.90;
+	width: 100%;
+	min-width: 1200px;
+}
+footer p a {
+	color: #FFF;
+	text-decoration: none;
+}
+footer h3, footer p {
+	color: #FFF;
+}
+.footer_first {
+	margin-top: 20px;
+}
+.footer_session {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+ul.social_icon_list {
+	margin-top: 20px;
+}
+ul.social_icon_list li {
+	display: inline;
+}
+ul.social_icon_list li img {
+	height: 50px;
+}
+.footer_second {
+	padding-top: 15px;
+	border-top: 3px solid #404E50;
+	background-color: #333333;
+	height: 44px;
+	text-align: center;
+	opacity: 0.95;
+}
+/*========end footer style============*/
+
+/*=========== general style ============*/
+a {
+	text-decoration: none;
+	color: blue;
+}
+a:hover {
+	color: #00ee11;
+}
+.wrapper {
+	width: 98%;
+	padding: 10px;
+}
+h2 {
+	color: #00ee11;
+}
+h3 {
+	color: #1a5fce;
+}
+/*========================*/
+.welcome {
+	text-align: right;
+}
+
+.inner_wrapper {	/* Cái này có trong mọi trang, nó là phần nằm giữa header và footer */
+	margin-top: 60px;
+	min-height: 500px;
+	min-width: 900px;
+}
+.btnSubmit {
+	background-color: #405580;
+    color: #fff;
+    font-weight: bold;
+    min-width: 120px;
+    border-radius: 4px;
+	height: 30px;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 10px
+}
+.table_edit_info {
+	padding: 7px;
+	border: 2px;
+	cellpadding: 5px;
+	background-color: #cecece;
+	margin-bottom: 12px;
+	border-radius: 10px;
+}
+.label_info {
+	text-align: right;
+	font-family: Arial;
+	text-shadow: 1px 1px 2px #888888;
+}
+.photo_div {
+	width: 30px;
+	height: 40px;
+	margin-left: 20px;
+	float: left;
+}
+#caiNayDeCanGiua {
+	margin-left: 20%;
+}
+/*========================*/

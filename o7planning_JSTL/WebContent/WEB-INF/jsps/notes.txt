@@ -1,0 +1,8 @@
+Nếu bạn không muốn người dùng truy cập trực tiếp vào các trang JSP bạn có thể để chúng trong thư mục WEB-INF
+hoặc các thư mục con của thư mục này.
+
+VD đối với file này, nếu chạy trên server như sau:
+http://localhost:8080/o7planning_JSTL/WEB-INF/jsps/notes.txt
+
+Thì sẽ báo lỗi do user ko được quyền truy cập trực tiếp các tài nguyên trong thư mục WEB-INF
+Muốn truy cập phải thông qua 1 Servlet, trong servlet đó sẽ forword hoặc sendRedirect tới file trên

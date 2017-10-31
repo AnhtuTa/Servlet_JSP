@@ -1,0 +1,22 @@
+.table_timetable {
+	border-collapse: collapse;
+}
+.table_timetable th, td {
+	padding: 5px;
+}
+.inputStID {
+	width: 150px;
+	height: 20px;
+	padding: 2px;
+}
+.btnSearch {
+	background-color: #405580;
+    color: #fff;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 4px;
+	height: 30px;
+	text-align: center;
+	padding: 10px, 10px, 15px, 10px;
+	margin-bottom: 10px
+}

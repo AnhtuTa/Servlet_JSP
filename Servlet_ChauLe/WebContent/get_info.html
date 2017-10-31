@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		.table_info {
+			width: 380px;
+			padding: 5px;
+			border: 2px;
+			cellpadding: 5px;
+			background-color: #f0f0f0;
+			margin-bottom: 12px;
+		}
+		.sectioncb {
+			width: 370px;
+			background-color: #f0f0f0;
+			padding: 5px;
+			border: 2px;
+			margin-bottom: 12px;
+		}
+		th {
+			text-align: center;
+			font: 20px Comic Sans MS;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+		td {
+			padding: 5px;
+		}
+		.first_left_row {
+			padding-right: 10px;
+			text-align: right;
+			text-shadow: 1px 1px 2px #888888;
+		}
+		.input_text {
+			padding: 5px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 5px #888888;
+			width: 200px;
+		}
+		select {
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<!-- box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit; -->
+
+<body>
+	<form action="display-student-info" method="post">  <!-- Nếu method = get thì các data từ form này sẽ đưa vào "đường link để mở trang display-student-info" -->
+		<table class="table_info">
+			<tr>
+				<th colspan="2">Register form</th>
+			</tr>
+			
+			<tr>
+				<td class="first_left_row">Name</td>
+				<td>
+					<input type="text" name="student_name" placeholder="full name" class="input_text"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="first_left_row">Address</td>
+				<td>
+					<input type="text" name="address" placeholder="your address" class="input_text"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="first_left_row">Age</td>
+				<td>
+					<input type="text" name="age" placeholder="your age" class="input_text"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="first_left_row">School</td>
+				<td>
+					<input type="text" name="school" placeholder="which school are you studying?" class="input_text"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="first_left_row">Sex</td>
+				<td>
+					<label>
+						<input type="radio" value="Male" name="sex" id="male"/>Male
+					</label>
+					<label>
+						<input type="radio" value="Female" name="sex" id="female"/>Female
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td class="first_left_row">Birthday</td>
+				<td>
+					<select name="day" style="width: 40px;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+					<select name="month">
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="May">May</option>
+						<option value="November">November</option>
+					</select>
+					<select name="year" style="width: 60px;">
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<section class="sectioncb">
+			<br/><div>You knew this program through</div>
+			<input type="checkbox" name="fb" value="Facebook">Facebook
+			<input type="checkbox" name="fr" value="Friends">Friends
+			<input type="checkbox" name="tw" value="Twitter">Twitter
+			<input type="checkbox" name="gg" value="Google Ads">Google Ads
+		</section>
+		
+		<input type="submit" value="Gửi data đi!"/>
+	</form>
+</body>
+</html>

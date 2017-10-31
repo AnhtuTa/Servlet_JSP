@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <context-param>
+    <param-name>user_default</param-name>
+    <param-value>anhtu</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pass_default</param-name>
+    <param-value>5555</param-value>
+  </context-param>
+  <context-param>
+    <param-name>song</param-name>
+    <param-value>Dieu anh biet - Chi Dân</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Example jsp</servlet-name>
+    <jsp-file>/example folder/sample.jsp</jsp-file>
+    <init-param>
+      <param-name>param_from_jsp</param-name>
+      <param-value>What the hell are you doing?</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Example jsp</servlet-name>
+    <url-pattern>/funny</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Authentication Demo</servlet-name>
+    <servlet-class>controller.Authentication</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Authentication Demo</servlet-name>
+    <url-pattern>/authenticate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Hello world</servlet-name>
+    <servlet-class>hello.HelloWorld</servlet-class>
+    <init-param>
+      <param-name>song</param-name>
+      <param-value>See you again</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hello world</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+</web-app>

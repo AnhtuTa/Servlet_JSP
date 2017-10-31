@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Practice2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Main controller</servlet-name>
+    <servlet-class>controller.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Main controller</servlet-name>
+    <url-pattern>/controller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Goku controller</servlet-name>
+    <servlet-class>controller.GokuController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Goku controller</servlet-name>
+    <url-pattern>/goku-controller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Goku show</servlet-name>
+    <servlet-class>view.GokuShow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Goku show</servlet-name>
+    <url-pattern>/goku-show</url-pattern>
+  </servlet-mapping>
+</web-app>
