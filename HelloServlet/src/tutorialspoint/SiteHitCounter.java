@@ -16,7 +16,6 @@ public class SiteHitCounter implements Filter {
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 		// TODO Auto-generated method stub
-		Filter.super.init(filterConfig);
 		totalHitCount = 0;
 	}
 	
